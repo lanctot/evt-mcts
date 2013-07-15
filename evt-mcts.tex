@@ -1,0 +1,148 @@
+%%%%%%%%%%%%%%%%%%%%%%% file typeinst.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is the LaTeX source for the instructions to authors using
+% the LaTeX document class 'llncs.cls' for contributions to
+% the Lecture Notes in Computer Sciences series.
+% http://www.springer.com/lncs       Springer Heidelberg 2006/05/04
+%
+% It may be used as a template for your own input - copy it
+% to a new file with a new name and use it as the basis
+% for your article.
+%
+% NB: the document class 'llncs' has its own and detailed documentation, see
+% ftp://ftp.springer.de/data/pubftp/pub/tex/latex/llncs/latex2e/llncsdoc.pdf
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[runningheads,a4paper]{llncs}
+
+\usepackage{graphicx}
+\usepackage{amssymb}
+\setcounter{tocdepth}{3}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage{nopageno}
+
+\usepackage[algo2e, noend, noline, linesnumbered]{algorithm2e}
+%\DontPrintSemicolon
+
+\makeatletter
+\newcommand{\pushline}{\Indp}% Indent
+\newcommand{\popline}{\Indm}
+\makeatother
+\DeclareMathOperator{\pess}{pess}
+\DeclareMathOperator{\opti}{opti}
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+
+\captionsetup{compatibility=false}
+
+
+
+%\pgfplotsset{compat=newest}
+\usetikzlibrary{arrows,shapes,petri}
+
+\newcommand{\bE}{\mathbb{E}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\eg}{{\it e.g.,}~}
+\newcommand{\ie}{{\it i.e.,}~}
+
+\newcommand{\redbold}[1]{\textbf{\color{red}#1}} 
+\newcommand{\markw}[1]{\textbf{\color{red} /* #1 (markw) */}} 
+\newcommand{\marcl}[1]{\textbf{\color{red} /* #1 (marcl) */}} 
+
+\usepackage{url}
+\urldef{\emails}\path|{marc.lanctot,m.winands}@maastrichtuniversity.nl,lisy@agents.fel.cvut.cz|
+%\urldef{\mailsb}\path|anna.kramer, leonie.kunz, christine.reiss, nicole.sator,|
+%\urldef{\mailsc}\path|erika.siebert-cole, peter.strasser, lncs}@springer.com|    
+\newcommand{\keywords}[1]{\par\addvspace\baselineskip
+\noindent\keywordname\enspace\ignorespaces#1}
+
+\begin{document}
+
+\mainmatter  % start of an individual contribution
+
+% first the title is needed
+\title{Modeling Extreme Values in Monte Carlo Tree Search}
+
+% a short form should be given in case it is too long for the running head
+%\titlerunning{Monte Carlo Tree Search in Simultaneous Move Games with Applications to Goofspiel}
+\titlerunning{ }
+
+% the name(s) of the author(s) follow(s) next
+%
+% NB: Chinese authors should write their first names(s) in front of
+% their surnames. This ensures that the names appear correctly in
+% the running heads and the author index.
+%
+\author{ }
+%
+\authorrunning{ }
+% (feature abused for this document to repeat the title also on left hand pages)
+
+% the affiliations are given next; don't give your e-mail address
+% unless you accept that it will be published
+% Agent Technology Center, Dept. of Computer Science, FEE, Czech Technical University in Prague
+% 
+
+%\institute{$^1$Department of Knowledge Engineering, \hspace{1cm} $^2$Department of Computer Science\\
+%\hspace{0.5cm}Maastricht University, Netherlands \hspace{1.1cm} Czech Technical University in Prague \\
+%\emails\\
+%}
+
+%Viliam Lis{\' y}
+%Agent Technology Center, Dept. of Computer Science and Engineering, FEE, Czech Technical University in Prague
+
+%
+% NB: a more complex sample for affiliations and the mapping to the
+% corresponding authors can be found in the file "llncs.dem"
+% (search for the string "\mainmatter" where a contribution starts).
+% "llncs.dem" accompanies the document class "llncs.cls".
+%
+
+%\toctitle{}
+%\tocauthor{Authors' Instructions}
+
+\maketitle
+
+
+\begin{abstract}
+Abstract
+\end{abstract}
+
+\section{Introduction}
+
+\section{Background}
+
+\subsection{Extreme Value Theory}
+
+\subsection{Monte Carlo Tree Search}
+
+\section{MCTS Based on Extreme Value Theory}
+
+\section{Experiments}
+
+\section{Conclusion}
+
+
+
+
+\bibliographystyle{splncs03}
+\bibliography{evt-mcts}
+
+\end{document}
